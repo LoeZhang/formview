@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="FormView">
+        <attr name="form_type" format="enum">
+            <enum name="text" value="0"/>
+            <enum name="edit" value="1"/>
+            <enum name="select" value="2"/>
+        </attr>
+        <attr name="form_auto_visible" format="boolean"/>
+        <attr name="form_bg" format="reference|color"/>
+        <attr name="form_not_null" format="boolean"/>
+        <attr name="form_ico" format="reference"/>
+        <attr name="form_hint" format="string"/>
+        <attr name="form_max_len" format="integer"/>
+        <attr name="form_max_line" format="integer"/>
+        <attr name="form_limit_number" format="integer"/>
+        <attr name="form_limit_decimal" format="integer"/>
+        <attr name="form_filter" format="string"/>
+        <attr name="form_title" format="string"/>
+        <attr name="form_text" format="string"/>
+        <attr name="form_text_color" format="reference|color"/>
+        <attr name="form_tail" format="string"/>
+        <attr name="form_edit_type" format="enum">
+            <enum name="text" value="0"/>
+            <enum name="password" value="1"/>
+            <enum name="number" value="2"/>
+            <enum name="decimal" value="3"/>
+        </attr>
+    </declare-styleable>
+</resources>

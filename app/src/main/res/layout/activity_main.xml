@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <com.loe.formview.FormView
+        android:id="@+id/formView1"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        app:form_hint="请选择服务费"
+        app:form_not_null="true"
+        app:form_tail="%"
+        app:form_text=""
+        app:form_title="首付比例"
+        app:form_type="select" />
+
+    <com.loe.formview.FormView
+        android:id="@+id/formView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        app:form_edit_type="decimal"
+        app:form_hint="请输入手续费"
+        app:form_limit_decimal="2"
+        app:form_limit_number="3"
+        app:form_tail="元"
+        app:form_text=""
+        app:form_title="手续费"
+        app:form_type="edit" />
+
+    <com.loe.formview.FormView
+        android:id="@+id/formView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        app:form_title="文本" />
+
+</LinearLayout>
