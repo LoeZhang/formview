@@ -61,7 +61,7 @@
         android:textSize="16dp" />
 
     <ImageView
-        android:layout_width="14dp"
+        android:layout_width="13dp"
         android:layout_height="match_parent"
         android:alpha="0.65"
         android:layout_marginRight="14dp"

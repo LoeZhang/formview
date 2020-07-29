@@ -179,6 +179,8 @@ public class FormView extends FrameLayout
         setFilter(typedArray.getString(R.styleable.FormView_form_filter));
         // auto_visible
         setAutoVisible(typedArray.getBoolean(R.styleable.FormView_form_auto_visible, false));
+        // size
+        setTextSize(typedArray.getDimension(R.styleable.FormView_form_text_size, dp_px(16)));
     }
 
     public static final int INPUT_TEXT = InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_FLAG_MULTI_LINE;
@@ -366,6 +368,21 @@ public class FormView extends FrameLayout
         return viewNotNull.getVisibility() == VISIBLE;
     }
 
+    private void setTextSize(float size)
+    {
+        float textSize = px_dp(size);
+        float maxSize = size * 1.1875f;
+        viewNotNull.setTextSize(textSize - 2);
+        textTitle.setTextSize(textSize);
+        textView.setTextSize(textSize);
+        textTail.setTextSize(textSize);
+        // ico
+        LinearLayout.LayoutParams params = (LinearLayout.LayoutParams) imageIco.getLayoutParams();
+        params.height = (int) maxSize;
+        params.width = (int) maxSize;
+        imageIco.setLayoutParams(params);
+    }
+
     public void addTextAfterListener(final StringCallback callBack)
     {
         textView.addTextChangedListener(new TextWatcher()
@@ -403,6 +420,12 @@ public class FormView extends FrameLayout
     {
         final float scale = getResources().getDisplayMetrics().density;
         return (int) (dpValue * scale + 0.5f);
+    }
+
+    public int px_dp(float pxValue)
+    {
+        final float scale = getResources().getDisplayMetrics().density;
+        return (int) ((pxValue + 0.5) / scale);
     }
 
     private void resetFilters()

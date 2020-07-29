@@ -18,6 +18,7 @@
         <attr name="form_filter" format="string"/>
         <attr name="form_title" format="string"/>
         <attr name="form_text" format="string"/>
+        <attr name="form_text_size" format="dimension"/>
         <attr name="form_text_color" format="reference|color"/>
         <attr name="form_tail" format="string"/>
         <attr name="form_edit_type" format="enum">
