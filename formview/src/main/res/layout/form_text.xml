@@ -28,7 +28,7 @@
         android:id="@+id/textTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="#444"
+        android:textColor="@color/textColor"
         android:textSize="16dp" />
 
     <EditText
@@ -46,8 +46,8 @@
         android:paddingTop="8dp"
         android:paddingRight="15dp"
         android:paddingBottom="8dp"
-        android:textColor="#444"
-        android:textColorHint="#ccc"
+        android:textColor="@color/textColor"
+        android:textColorHint="@color/hintColor"
         android:textSize="16dp" />
 
     <TextView
@@ -56,6 +56,6 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="-8dp"
         android:paddingRight="15dp"
-        android:textColor="#888"
+        android:textColor="@color/grayColorDeep"
         android:textSize="16dp" />
 </LinearLayout>

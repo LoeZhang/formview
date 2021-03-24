@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity()
             formView1.name = null
             formView1.value = null
             Toast.makeText(this, "选择", Toast.LENGTH_SHORT).show()
-            formView3.text = "${formView1.text} - ${formView1.value}"
+            formView3.text = "${formView2.text} - ${formView2.value}"
         }
     }
 }

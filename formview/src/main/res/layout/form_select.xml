@@ -29,7 +29,7 @@
         android:id="@+id/textTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="#444"
+        android:textColor="@color/textColor"
         android:textSize="16dp" />
 
     <TextView
@@ -47,8 +47,8 @@
         android:paddingRight="8dp"
         android:paddingBottom="8dp"
         android:text=""
-        android:textColor="#444"
-        android:textColorHint="#ccc"
+        android:textColor="@color/textColor"
+        android:textColorHint="@color/hintColor"
         android:textSize="16dp" />
 
     <TextView
@@ -57,13 +57,13 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="-2dp"
         android:paddingRight="8dp"
-        android:textColor="#888"
+        android:textColor="@color/grayColorDeep"
         android:textSize="16dp" />
 
     <ImageView
         android:layout_width="13dp"
         android:layout_height="match_parent"
-        android:alpha="0.65"
+        android:alpha="0.7"
         android:layout_marginRight="14dp"
         android:src="@drawable/form_arrow2right_black" />
 </LinearLayout>
